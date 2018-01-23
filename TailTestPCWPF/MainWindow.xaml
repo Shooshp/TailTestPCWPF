@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TailTestPCWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="TailTester" Height="350" Width="604">
     <Grid>
+        <TextBlock Text="WELCOME!" Name="HeaderText"  TextAlignment="Center" HorizontalAlignment="Center" FontSize="30" TextWrapping="Wrap"/>
+
+        <DataGrid Margin="35" Name="gridResults" ItemsSource="{Binding list}" AutoGenerateColumns="True" Visibility="Hidden" />
+
+        <ProgressBar Name = "ProgessBar" Margin = "35" Height = "15" IsIndeterminate = "True" Visibility="Hidden" />
+
+        <TextBlock Text="USB" Name="UsbText" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="10"></TextBlock>
         
     </Grid>
 </Window>
